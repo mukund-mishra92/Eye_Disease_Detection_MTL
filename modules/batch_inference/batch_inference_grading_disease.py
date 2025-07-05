@@ -7,7 +7,7 @@ from torchvision import transforms
 from torchvision.models import resnet18, resnet50, resnet101
 from torch.utils.data import DataLoader
 from sklearn.metrics import accuracy_score, f1_score
-from dataset import EyeDiseaseDataset
+from modules.training.multi_class_grading.dataset import EyeDiseaseDataset
 
 def main():
     # Paths
