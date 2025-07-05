@@ -1,5 +1,5 @@
 import torch
-from modules.multitask_model import MultiTaskModel
+from modules.MTL.previous.multitask_model import MultiTaskModel
 
 def test_forward_pass():
     model = MultiTaskModel(num_classes=5, seg_channels=1)

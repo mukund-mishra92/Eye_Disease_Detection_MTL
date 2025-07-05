@@ -1,7 +1,7 @@
 import json
 import torch
 import torchvision.transforms as T
-from modules.multitask_model import MultiTaskModel
+from modules.MTL.previous.multitask_model import MultiTaskModel
 from utils.dataloader import IDRiDDataset
 from training.train import train_model
 from torch.optim import Adam

@@ -1,0 +1,16 @@
+{
+    "batch_size": 4,           
+    "epochs": 30,
+    "lr": 0.00026911064958428526,
+    "weight_decay": 4.519087839958215e-05,
+    "cls_loss_weight": 1.0,     
+    "seg_loss_weight": 1.0,
+    "train_cls_image_dir": "Preprocessed_Data/classification/train/train_images",
+    "train_cls_label_json": "Preprocessed_Data/classification/train/train_iamge_lable_mapping.json",
+    "val_cls_image_dir": "Preprocessed_Data/classification/test/test_images",
+    "val_cls_label_json": "Preprocessed_Data/classification/test/test_image_label_mapping.json",
+    "train_seg_image_dir": "Preprocessed_Data/segmentation/train/train_images",
+    "train_seg_mask_dir": "Preprocessed_Data/segmentation/train/groundtruth",
+    "val_seg_image_dir": "Preprocessed_Data/segmentation/test/test_images",
+    "val_seg_mask_dir": "Preprocessed_Data/segmentation/test/groundtruth"
+  }
