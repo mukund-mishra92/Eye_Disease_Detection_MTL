@@ -1,0 +1,3 @@
+Expt, model, epoch, Loss, Accuracy_on_Train_data, Accuracy_on_test_data, F1score_test_data
+1, Resnet18, 10, 0.30, 50, 45, 43
+2, Resent50, 10, 0.68, 48, 45.63, 0.418

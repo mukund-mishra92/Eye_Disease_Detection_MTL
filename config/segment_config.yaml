@@ -1,0 +1,5 @@
+Segmentation_paths:
+  train_img_dir : "/Users/balmukundmishra/Desktop/2025-Learning/Eye_Disease_Detection_MTL/Preprocessed_Data/segmentation/train/train_images"
+  train_gt_dir : "/Users/balmukundmishra/Desktop/2025-Learning/Eye_Disease_Detection_MTL/Preprocessed_Data/segmentation/train/groundtruth"
+  test_img_dir : "/Users/balmukundmishra/Desktop/2025-Learning/Eye_Disease_Detection_MTL/Preprocessed_Data/segmentation/test/test_images"
+  test_gt_dir : "/Users/balmukundmishra/Desktop/2025-Learning/Eye_Disease_Detection_MTL/Preprocessed_Data/segmentation/test/groundtruth"
