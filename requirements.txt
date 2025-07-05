@@ -1,3 +1,9 @@
 optun
 torch
 streamlit
+torchvision
+numpy
+scikit-learn
+tqdm
+Pillow
+matplotlib

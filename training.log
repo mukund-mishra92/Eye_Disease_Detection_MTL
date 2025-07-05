@@ -32,3 +32,5 @@
 2025-07-05 20:56:39,285 | INFO | ✅ Epoch 7 | Train Loss: 0.5902 | Val Loss: 0.9356
 2025-07-05 20:56:39,286 | INFO | 🛑 Early stopping triggered.
 2025-07-05 20:56:39,585 | INFO | ✅ Final model saved to models/mtl_model_final.pth
+2025-07-05 23:26:14,999 | INFO | ✅ Classification Accuracy: 0.5534 | F1 Score: 0.4122
+2025-07-05 23:26:17,270 | INFO | ✅ Segmentation Dice: 1.0000 | BCE Loss: 0.0083
