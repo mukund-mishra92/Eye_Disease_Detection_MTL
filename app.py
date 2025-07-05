@@ -2,8 +2,8 @@ import streamlit as st
 from PIL import Image, ImageOps
 import numpy as np
 
-from modules.inference.inference_grading_disease import predict_image_class
-from modules.inference.inference_segementation import predict_single_image
+from modules.Individual_model_arch.inference.inference_grading_disease import predict_image_class
+from modules.Individual_model_arch.inference.inference_segementation import predict_single_image
 
 # --- Overlay function ---
 def overlay_mask_on_image(original_image, mask_array, color=(255, 0, 0), alpha=0.5):

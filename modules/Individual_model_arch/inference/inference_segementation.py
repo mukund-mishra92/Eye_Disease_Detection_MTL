@@ -3,7 +3,9 @@ from torchvision import transforms
 from PIL import Image
 import numpy as np
 import os
-from modules.training.segmentation.model import UNet
+
+from modules.Individual_model_arch.training.segmentation.model import UNet
+#from modules.training.segmentation.model import UNet
 
 from PIL import Image, ImageOps
 
