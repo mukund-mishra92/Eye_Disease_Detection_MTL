@@ -150,4 +150,4 @@ matplotlib
 
 **Dr. Balmukund Mishra**  
 AI Researcher | Medical Imaging | Computer Vision  
-📬 balmukund.mishra92@fmail.com
+📬 balmukund.mishra92@gmail.com
