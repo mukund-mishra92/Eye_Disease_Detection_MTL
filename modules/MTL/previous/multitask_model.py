@@ -1,6 +1,6 @@
-from modules.shared_backbone import SharedBackbone
-from modules.classifier_head import ClassifierHead
-from modules.segmenter_head import SegmenterHead
+from modules.MTL.previous.shared_backbone import SharedBackbone
+from modules.MTL.previous.classifier_head import ClassifierHead
+from modules.MTL.previous.segmenter_head import SegmenterHead
 
 import torch.nn as nn
 

@@ -1,0 +1,11 @@
+2025-07-05 17:45:44,524 | INFO | ✅ Epoch 1 | Train Loss: 0.8923 | Val Loss: 1.0750
+2025-07-05 17:49:37,773 | INFO | ✅ Epoch 1 | Train Loss: 0.9530 | Val Loss: 1.0777
+2025-07-05 17:53:15,045 | INFO | ✅ Epoch 2 | Train Loss: 0.7548 | Val Loss: 1.0026
+2025-07-05 17:57:06,935 | INFO | ✅ Epoch 3 | Train Loss: 0.6708 | Val Loss: 0.9056
+2025-07-05 18:01:36,872 | INFO | ✅ Epoch 4 | Train Loss: 0.5366 | Val Loss: 1.0845
+2025-07-05 18:05:51,694 | INFO | ✅ Epoch 5 | Train Loss: 0.4368 | Val Loss: 1.0184
+2025-07-05 18:09:34,619 | INFO | ✅ Epoch 6 | Train Loss: 0.4092 | Val Loss: 1.2450
+2025-07-05 18:13:21,059 | INFO | ✅ Epoch 7 | Train Loss: 0.3422 | Val Loss: 1.1039
+2025-07-05 18:17:28,862 | INFO | ✅ Epoch 8 | Train Loss: 0.2971 | Val Loss: 1.2101
+2025-07-05 18:17:28,863 | INFO | 🛑 Early stopping triggered.
+2025-07-05 18:17:29,462 | INFO | ✅ Final model saved to models/mtl_model_final.pth
