@@ -88,3 +88,8 @@
 2025-07-06 20:07:47,326 | INFO | ✅ Final model saved to models/mtl_model_final.pth
 ## checking with image size 640*640 // might improve from previous but taking lot of time, need to train on gpu
 2025-07-06 20:58:36,806 | INFO | ✅ Epoch 1 | Train CLS Loss: 0.6814 | Train SEG Loss: 0.7587 | Val CLS Loss: 0.5540 | Val SEG Loss: 0.6881 | Acc: 0.4968 | F1: 0.3388 | Dice: 0.1757
+## Running my training with parameter optimization method optuna
+2025-07-07 10:18:34,992 | INFO | ✅ Epoch 1 | Train CLS Loss: 0.5774 | Train SEG Loss: 0.5602 | Val CLS Loss: 0.5543 | Val SEG Loss: 0.4632 | Acc: 0.5160 | F1: 0.3627 | Dice: 0.0939
+2025-07-07 10:39:46,274 | INFO | ✅ Epoch 2 | Train CLS Loss: 0.4611 | Train SEG Loss: 0.4276 | Val CLS Loss: 0.4371 | Val SEG Loss: 0.4327 | Acc: 0.5737 | F1: 0.4221 | Dice: 0.1793
+2025-07-07 11:01:14,342 | INFO | ✅ Epoch 3 | Train CLS Loss: 0.4019 | Train SEG Loss: 0.4101 | Val CLS Loss: 0.6481 | Val SEG Loss: 0.4252 | Acc: 0.5833 | F1: 0.4370 | Dice: 0.2089
+2025-07-07 11:23:46,119 | INFO | ✅ Epoch 4 | Train CLS Loss: 0.3522 | Train SEG Loss: 0.3978 | Val CLS Loss: 0.5003 | Val SEG Loss: 0.3954 | Acc: 0.6122 | F1: 0.4825 | Dice: 0.2371

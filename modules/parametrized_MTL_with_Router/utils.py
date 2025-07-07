@@ -1,53 +1,6 @@
 import torch
 import copy
 
-class MultiMetricEarlyStopping:
-    def __init__(self, patience=5, delta=0.0, save_path='models/mtl_model.pth', 
-                 monitor_metrics=None):
-        """
-        monitor_metrics: dict where key = metric name, value = 'min' or 'max'
-        Example: {'val_loss_task1': 'min', 'val_acc_task2': 'max'}
-        """
-        self.patience = patience
-        self.delta = delta
-        self.save_path = save_path
-        self.monitor_metrics = monitor_metrics or {}
-        
-        self.best_metrics = {metric: float('inf') if mode == 'min' else float('-inf')
-                             for metric, mode in self.monitor_metrics.items()}
-        self.counter = 0
-        self.early_stop = False
-
-    def __call__(self, current_metrics: dict, model):
-        """
-        current_metrics: dict with current values for each metric
-        """
-        improved = False
-        for metric, mode in self.monitor_metrics.items():
-            current = current_metrics.get(metric)
-            best = self.best_metrics[metric]
-
-            if current is None:
-                continue
-
-            if (mode == 'min' and current < best - self.delta) or \
-               (mode == 'max' and current > best + self.delta):
-                self.best_metrics[metric] = current
-                improved = True
-                print(f"✅ {metric} improved to {current:.4f}")
-
-        if improved:
-            self.counter = 0
-            torch.save(model.state_dict(), self.save_path)
-            print(f"📦 Model saved at {self.save_path}")
-        else:
-            self.counter += 1
-            print(f"⏳ No improvement. EarlyStopping counter: {self.counter}/{self.patience}")
-            if self.counter >= self.patience:
-                self.early_stop = True
-                print("⛔ Early stopping triggered.")
-
-
 class CompositeEarlyStopping:
     def __init__(self, patience=5, delta=1e-4, save_path='models/mtl_model.pth',
                  alpha=0.5, beta=0.5, verbose=True):
