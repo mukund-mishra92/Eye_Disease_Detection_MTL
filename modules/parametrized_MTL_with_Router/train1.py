@@ -12,12 +12,12 @@ from itertools import cycle
 import logging
 import numpy as np
 from sklearn.metrics import f1_score, accuracy_score
+from torch.optim.lr_scheduler import ReduceLROnPlateau
 
 from modules.MTL_with_Router.model import MultiTaskModel
 from modules.MTL_with_Router.dataset_512 import MultiTaskDataset
 from modules.MTL_with_Router.losses import FocalLoss
 from modules.MTL_with_Router.utils import CompositeEarlyStopping  # ✅ using your old function
-
 
 # ---------- Loss Function ----------
 class BCEDiceLoss(nn.Module):
@@ -33,8 +33,6 @@ class BCEDiceLoss(nn.Module):
         union = pred.sum(dim=(2, 3)) + target.sum(dim=(2, 3))
         dice_loss = 1 - ((2. * intersection + smooth) / (union + smooth)).mean()
         return bce_loss + dice_loss
-    
-## another loss function for segmentation, as disce score is  not improvig due to the sparse mask
 
 class BCESoftDiceLoss(nn.Module):
     def __init__(self, bce_weight=0.2, dice_weight=0.8):
@@ -45,17 +43,13 @@ class BCESoftDiceLoss(nn.Module):
 
     def forward(self, pred, target):
         bce_loss = self.bce(pred, target)
-
         pred = torch.sigmoid(pred)
         smooth = 1e-6
         intersection = (pred * target).sum(dim=(2, 3))
         union = pred.sum(dim=(2, 3)) + target.sum(dim=(2, 3))
         dice = ((2. * intersection + smooth) / (union + smooth)).mean()
         dice_loss = 1 - dice
-
         return self.bce_weight * bce_loss + self.dice_weight * dice_loss
-
-
 
 # ---------- Metrics ----------
 def compute_classification_metrics(logits, labels):
@@ -65,7 +59,6 @@ def compute_classification_metrics(logits, labels):
     f1 = f1_score(labels, preds, average='macro')
     return acc, f1
 
-
 def compute_dice_score(pred, target):
     smooth = 1e-6
     pred = torch.sigmoid(pred)
@@ -74,10 +67,7 @@ def compute_dice_score(pred, target):
     union = pred.sum(dim=(0, 2, 3)) + target.sum(dim=(0, 2, 3))
     valid = union > 0
     dice = ((2. * intersection + smooth) / (union + smooth))[valid]
-    #print("Dice pred stats:", pred.min().item(), pred.max().item(), pred.mean().item())
-    #print("Target stats:", target.min().item(), target.max().item(), target.mean().item())
     return dice.mean().item() if dice.numel() > 0 else 0.0
-
 
 # ---------- Validation ----------
 def validate(model, val_cls_loader, val_seg_loader, criterion_cls, criterion_seg, device):
@@ -113,7 +103,6 @@ def validate(model, val_cls_loader, val_seg_loader, criterion_cls, criterion_seg
     avg_dice = dice_sum / len(val_seg_loader)
     return avg_cls_loss, avg_seg_loss, avg_acc, avg_f1, avg_dice
 
-
 # ---------- Training ----------
 def train_dual_datasets(
     model, train_cls_loader, train_seg_loader, val_cls_loader, val_seg_loader,
@@ -125,6 +114,7 @@ def train_dual_datasets(
         alpha=0.5,
         beta=0.5
     )
+    scheduler = ReduceLROnPlateau(optimizer, mode='min', patience=3, factor=0.5, verbose=True)
 
     metrics_log = []
 
@@ -189,6 +179,9 @@ def train_dual_datasets(
             "val_dice": val_dice
         })
 
+        composite_val_score = val_cls_loss + (1.0 - val_dice)
+        scheduler.step(composite_val_score)
+
         early_stopping(val_cls_loss, val_dice, model)
         if early_stopping.early_stop:
             logging.info("🛑 Early stopping triggered.")
@@ -196,7 +189,6 @@ def train_dual_datasets(
 
     with open("logs/metrics_log.json", "w") as f:
         json.dump(metrics_log, f, indent=4)
-
 
 # ---------- Main ----------
 def main():
@@ -244,7 +236,6 @@ def main():
 
     model = MultiTaskModel(num_disease_classes=5).to(device)
     criterion_cls = FocalLoss(gamma=2.477834642865635)
-    #criterion_seg = BCEDiceLoss()
     criterion_seg = BCESoftDiceLoss(bce_weight=0.2, dice_weight=0.8)
     optimizer = optim.Adam(model.parameters(), lr=config["lr"], weight_decay=config["weight_decay"])
 
@@ -257,7 +248,6 @@ def main():
     os.makedirs("models", exist_ok=True)
     torch.save(model.state_dict(), "models/mtl_model_final.pth")
     logging.info("✅ Final model saved to models/mtl_model_final.pth")
-
 
 if __name__ == "__main__":
     main()

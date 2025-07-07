@@ -1,7 +1,7 @@
 import re
 import matplotlib.pyplot as plt
 
-log_path = "logs/training.log"
+log_path = "logs/training1.log"
 
 epoch_data = []
 with open(log_path, "r") as f:
@@ -57,5 +57,5 @@ plt.legend()
 plt.grid(True)
 
 plt.tight_layout()
-plt.savefig("logs/mtl_loss_and_metrics_plot.png")
+plt.savefig("logs/mtl_loss_and_metrics_plot3.png")
 plt.show()

@@ -58,11 +58,11 @@ class MultiTaskDataset(Dataset):
 
         # Define transforms
         self.img_transform = transforms.Compose([
-            transforms.Resize((256, 256)),
+            transforms.Resize((512, 512)),
             transforms.ToTensor()
         ])
         self.mask_transform = transforms.Compose([
-            transforms.Resize((256, 256), interpolation=InterpolationMode.NEAREST),
+            transforms.Resize((512, 512), interpolation=InterpolationMode.NEAREST),
             transforms.ToTensor()
         ])
 
@@ -79,7 +79,7 @@ class MultiTaskDataset(Dataset):
         label = torch.tensor(self.labels.get(fname, 0))
 
         # Multi-channel segmentation mask
-        mask_tensor = torch.zeros((len(LESION_TYPES), 256, 256))
+        mask_tensor = torch.zeros((len(LESION_TYPES), 512, 512))
         if self.mask_dir:
             for i, lesion in enumerate(LESION_TYPES):
                 lesion_code = LESION_FOLDER_MAP[lesion]

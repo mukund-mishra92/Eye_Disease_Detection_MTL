@@ -8,3 +8,83 @@
 2025-07-05 22:46:00,094 | INFO | ✅ Epoch 8 | Train CLS Loss: 0.5494 | Train SEG Loss: 1.0036 | Val CLS Loss: 1.3380 | Val SEG Loss: 1.0083 | Acc: 0.5513 | F1: 0.3870 | Dice: 1.0000
 2025-07-05 22:46:00,095 | INFO | 🛑 Early stopping triggered.
 2025-07-05 22:46:00,423 | INFO | ✅ Final model saved to models/mtl_model_final.pth
+2025-07-06 08:38:40,252 | INFO | ✅ Epoch 1 | Train CLS Loss: 0.7295 | Train SEG Loss: 1.2586 | Val CLS Loss: 0.8752 | Val SEG Loss: 1.1026 | Acc: 0.4744 | F1: 0.3618 | Dice: 0.0000
+2025-07-06 08:40:16,621 | INFO | ✅ Epoch 2 | Train CLS Loss: 0.6795 | Train SEG Loss: 1.0497 | Val CLS Loss: 0.6554 | Val SEG Loss: 1.0387 | Acc: 0.4679 | F1: 0.3402 | Dice: 0.0000
+2025-07-06 08:41:54,775 | INFO | ✅ Epoch 3 | Train CLS Loss: 0.5997 | Train SEG Loss: 1.0211 | Val CLS Loss: 0.7707 | Val SEG Loss: 1.0247 | Acc: 0.4872 | F1: 0.3492 | Dice: 0.0000
+2025-07-06 08:43:35,439 | INFO | ✅ Epoch 4 | Train CLS Loss: 0.5199 | Train SEG Loss: 1.0119 | Val CLS Loss: 1.0236 | Val SEG Loss: 1.0147 | Acc: 0.3846 | F1: 0.2653 | Dice: 0.0000
+2025-07-06 08:46:12,444 | INFO | ✅ Epoch 1 | Train CLS Loss: 0.7544 | Train SEG Loss: 1.2651 | Val CLS Loss: 0.8706 | Val SEG Loss: 1.1374 | Acc: 0.4263 | F1: 0.2854 | Dice: 0.0000
+2025-07-06 08:47:53,028 | INFO | ✅ Epoch 2 | Train CLS Loss: 0.6492 | Train SEG Loss: 1.0532 | Val CLS Loss: 0.6647 | Val SEG Loss: 1.0613 | Acc: 0.5545 | F1: 0.3961 | Dice: 0.0000
+2025-07-06 08:49:30,815 | INFO | ✅ Epoch 3 | Train CLS Loss: 0.6024 | Train SEG Loss: 1.0226 | Val CLS Loss: 0.9833 | Val SEG Loss: 1.0254 | Acc: 0.4872 | F1: 0.3409 | Dice: 0.0000
+2025-07-06 08:51:11,191 | INFO | ✅ Epoch 4 | Train CLS Loss: 0.5688 | Train SEG Loss: 1.0127 | Val CLS Loss: 0.7083 | Val SEG Loss: 1.0157 | Acc: 0.4647 | F1: 0.3235 | Dice: 0.0000
+2025-07-06 08:52:50,950 | INFO | ✅ Epoch 5 | Train CLS Loss: 0.4764 | Train SEG Loss: 1.0082 | Val CLS Loss: 0.9628 | Val SEG Loss: 1.0108 | Acc: 0.5353 | F1: 0.4215 | Dice: 0.0000
+2025-07-06 11:23:16,190 | INFO | ✅ Epoch 6 | Train CLS Loss: 0.5062 | Train SEG Loss: 1.0057 | Val CLS Loss: 1.1096 | Val SEG Loss: 1.0080 | Acc: 0.4487 | F1: 0.3397 | Dice: 0.0000
+2025-07-06 11:24:46,412 | INFO | ✅ Epoch 7 | Train CLS Loss: 0.4308 | Train SEG Loss: 1.0043 | Val CLS Loss: 0.7425 | Val SEG Loss: 1.0084 | Acc: 0.5897 | F1: 0.4438 | Dice: 0.0000
+2025-07-06 11:26:19,361 | INFO | ✅ Epoch 8 | Train CLS Loss: 0.3270 | Train SEG Loss: 1.0033 | Val CLS Loss: 0.7863 | Val SEG Loss: 1.0056 | Acc: 0.4583 | F1: 0.3471 | Dice: 0.0000
+2025-07-06 11:27:55,733 | INFO | ✅ Epoch 9 | Train CLS Loss: 0.3194 | Train SEG Loss: 1.0027 | Val CLS Loss: 1.0485 | Val SEG Loss: 1.0050 | Acc: 0.5224 | F1: 0.4082 | Dice: 0.0000
+2025-07-06 11:29:32,006 | INFO | ✅ Epoch 10 | Train CLS Loss: 0.2594 | Train SEG Loss: 1.0022 | Val CLS Loss: 0.8547 | Val SEG Loss: 1.0050 | Acc: 0.5513 | F1: 0.3907 | Dice: 0.0000
+2025-07-06 11:31:08,757 | INFO | ✅ Epoch 11 | Train CLS Loss: 0.2137 | Train SEG Loss: 1.0018 | Val CLS Loss: 0.9958 | Val SEG Loss: 1.0037 | Acc: 0.5192 | F1: 0.3768 | Dice: 0.0000
+2025-07-06 11:32:46,474 | INFO | ✅ Epoch 12 | Train CLS Loss: 0.2329 | Train SEG Loss: 1.0016 | Val CLS Loss: 0.7813 | Val SEG Loss: 1.0032 | Acc: 0.5833 | F1: 0.4565 | Dice: 0.0000
+2025-07-06 11:34:27,393 | INFO | ✅ Epoch 13 | Train CLS Loss: 0.2577 | Train SEG Loss: 1.0014 | Val CLS Loss: 1.3401 | Val SEG Loss: 1.0020 | Acc: 0.4968 | F1: 0.3676 | Dice: 0.0000
+2025-07-06 11:36:23,002 | INFO | ✅ Epoch 14 | Train CLS Loss: 0.1638 | Train SEG Loss: 1.0012 | Val CLS Loss: 0.9353 | Val SEG Loss: 1.0025 | Acc: 0.5609 | F1: 0.4122 | Dice: 0.0000
+2025-07-06 11:38:35,820 | INFO | ✅ Epoch 15 | Train CLS Loss: 0.1790 | Train SEG Loss: 1.0011 | Val CLS Loss: 1.1162 | Val SEG Loss: 1.0019 | Acc: 0.5224 | F1: 0.3880 | Dice: 0.0000
+2025-07-06 11:41:08,867 | INFO | ✅ Epoch 16 | Train CLS Loss: 0.2297 | Train SEG Loss: 1.0009 | Val CLS Loss: 0.9331 | Val SEG Loss: 1.0018 | Acc: 0.4263 | F1: 0.3004 | Dice: 0.0000
+## added code for composite loss tracking for early stopping
+2025-07-06 11:47:03,049 | INFO | ✅ Epoch 1 | Train CLS Loss: 0.8052 | Train SEG Loss: 1.2395 | Val CLS Loss: 0.8774 | Val SEG Loss: 1.1124 | Acc: 0.4679 | F1: 0.3281 | Dice: 0.0000
+2025-07-06 11:49:29,706 | INFO | ✅ Epoch 2 | Train CLS Loss: 0.6645 | Train SEG Loss: 1.0469 | Val CLS Loss: 0.7355 | Val SEG Loss: 1.0437 | Acc: 0.4968 | F1: 0.3576 | Dice: 0.0000
+2025-07-06 11:51:54,684 | INFO | ✅ Epoch 3 | Train CLS Loss: 0.6096 | Train SEG Loss: 1.0202 | Val CLS Loss: 0.6746 | Val SEG Loss: 1.0237 | Acc: 0.5353 | F1: 0.3975 | Dice: 0.0000
+2025-07-06 11:54:00,442 | INFO | ✅ Epoch 4 | Train CLS Loss: 0.4898 | Train SEG Loss: 1.0114 | Val CLS Loss: 0.5992 | Val SEG Loss: 1.0203 | Acc: 0.5449 | F1: 0.4229 | Dice: 0.0000
+2025-07-06 11:55:55,715 | INFO | ✅ Epoch 5 | Train CLS Loss: 0.4906 | Train SEG Loss: 1.0074 | Val CLS Loss: 0.8796 | Val SEG Loss: 1.0112 | Acc: 0.4776 | F1: 0.3567 | Dice: 0.0000
+2025-07-06 11:58:08,986 | INFO | ✅ Epoch 6 | Train CLS Loss: 0.4273 | Train SEG Loss: 1.0052 | Val CLS Loss: 0.9292 | Val SEG Loss: 1.0094 | Acc: 0.5256 | F1: 0.3778 | Dice: 0.0000
+2025-07-06 12:00:22,447 | INFO | ✅ Epoch 7 | Train CLS Loss: 0.3981 | Train SEG Loss: 1.0039 | Val CLS Loss: 0.7489 | Val SEG Loss: 1.0073 | Acc: 0.5353 | F1: 0.4104 | Dice: 0.0000
+2025-07-06 12:02:37,822 | INFO | ✅ Epoch 8 | Train CLS Loss: 0.3233 | Train SEG Loss: 1.0031 | Val CLS Loss: 0.8286 | Val SEG Loss: 1.0057 | Acc: 0.5160 | F1: 0.3665 | Dice: 0.0000
+2025-07-06 12:04:50,577 | INFO | ✅ Epoch 9 | Train CLS Loss: 0.2293 | Train SEG Loss: 1.0025 | Val CLS Loss: 0.7156 | Val SEG Loss: 1.0042 | Acc: 0.6058 | F1: 0.5056 | Dice: 0.0000
+2025-07-06 12:04:50,578 | INFO | 🛑 Early stopping triggered.
+2025-07-06 12:04:50,958 | INFO | ✅ Final model saved to models/mtl_model_final.pth
+## lets update the mode arch [unet] as the current model not able to capture the patterns after certain epochs
+2025-07-06 12:11:35,118 | INFO | ✅ Epoch 1 | Train CLS Loss: 0.7911 | Train SEG Loss: 1.6351 | Val CLS Loss: 0.8118 | Val SEG Loss: 1.5472 | Acc: 0.4968 | F1: 0.3324 | Dice: 0.0000
+2025-07-06 12:13:54,064 | INFO | ✅ Epoch 2 | Train CLS Loss: 0.7039 | Train SEG Loss: 1.4628 | Val CLS Loss: 0.7309 | Val SEG Loss: 1.3991 | Acc: 0.5224 | F1: 0.3844 | Dice: 0.0000
+2025-07-06 12:16:13,906 | INFO | ✅ Epoch 3 | Train CLS Loss: 0.6462 | Train SEG Loss: 1.3338 | Val CLS Loss: 0.6787 | Val SEG Loss: 1.2829 | Acc: 0.4647 | F1: 0.3098 | Dice: 0.0000
+2025-07-06 12:18:39,084 | INFO | ✅ Epoch 4 | Train CLS Loss: 0.5549 | Train SEG Loss: 1.2422 | Val CLS Loss: 0.8637 | Val SEG Loss: 1.2051 | Acc: 0.5160 | F1: 0.3941 | Dice: 0.0000
+2025-07-06 12:20:57,080 | INFO | ✅ Epoch 5 | Train CLS Loss: 0.5420 | Train SEG Loss: 1.1775 | Val CLS Loss: 0.7196 | Val SEG Loss: 1.1521 | Acc: 0.4263 | F1: 0.3095 | Dice: 0.0000
+2025-07-06 12:23:48,495 | INFO | ✅ Epoch 6 | Train CLS Loss: 0.5012 | Train SEG Loss: 1.1323 | Val CLS Loss: 1.0385 | Val SEG Loss: 1.1146 | Acc: 0.5897 | F1: 0.4355 | Dice: 0.0000
+2025-07-06 12:26:35,328 | INFO | ✅ Epoch 7 | Train CLS Loss: 0.4319 | Train SEG Loss: 1.1005 | Val CLS Loss: 0.8149 | Val SEG Loss: 1.0883 | Acc: 0.5833 | F1: 0.4506 | Dice: 0.0000
+2025-07-06 12:29:33,301 | INFO | ✅ Epoch 8 | Train CLS Loss: 0.4113 | Train SEG Loss: 1.0780 | Val CLS Loss: 0.6749 | Val SEG Loss: 1.0690 | Acc: 0.4904 | F1: 0.3517 | Dice: 0.0000
+2025-07-06 12:39:32,864 | INFO | ✅ Epoch 1 | Train CLS Loss: 0.7757 | Train SEG Loss: 1.5565 | Val CLS Loss: 2.0059 | Val SEG Loss: 1.4646 | Acc: 0.4006 | F1: 0.2880 | Dice: 0.0000
+2025-07-06 12:42:47,674 | INFO | ✅ Epoch 2 | Train CLS Loss: 0.6591 | Train SEG Loss: 1.3956 | Val CLS Loss: 0.6640 | Val SEG Loss: 1.3367 | Acc: 0.4744 | F1: 0.3057 | Dice: 0.0000
+2025-07-06 12:46:22,748 | INFO | ✅ Epoch 3 | Train CLS Loss: 0.6186 | Train SEG Loss: 1.2829 | Val CLS Loss: 0.7310 | Val SEG Loss: 1.2409 | Acc: 0.4487 | F1: 0.3019 | Dice: 0.0000
+2025-07-06 12:49:58,754 | INFO | ✅ Epoch 4 | Train CLS Loss: 0.5996 | Train SEG Loss: 1.2055 | Val CLS Loss: 0.9045 | Val SEG Loss: 1.1756 | Acc: 0.4359 | F1: 0.2707 | Dice: 0.0000
+2025-07-06 12:53:21,072 | INFO | ✅ Epoch 5 | Train CLS Loss: 0.5568 | Train SEG Loss: 1.1511 | Val CLS Loss: 1.0148 | Val SEG Loss: 1.1297 | Acc: 0.5449 | F1: 0.4129 | Dice: 0.0000
+2025-07-06 14:14:50,127 | INFO | ✅ Epoch 1 | Train CLS Loss: 0.7076 | Train SEG Loss: 1.4939 | Val CLS Loss: 0.8205 | Val SEG Loss: 1.4092 | Acc: 0.4776 | F1: 0.3180 | Dice: 0.0000
+2025-07-06 14:20:53,456 | INFO | ✅ Epoch 1 | Train CLS Loss: 0.6666 | Train SEG Loss: 1.5863 | Val CLS Loss: 0.7455 | Val SEG Loss: 1.5125 | Acc: 0.4071 | F1: 0.2730 | Dice: 0.0000
+2025-07-06 14:25:04,851 | INFO | ✅ Epoch 1 | Train CLS Loss: 0.7188 | Train SEG Loss: 1.5491 | Val CLS Loss: 0.7173 | Val SEG Loss: 1.4735 | Acc: 0.4231 | F1: 0.3075 | Dice: 0.0000
+## Fixed the issue of Dice score where segmentation mask was not contributing
+2025-07-06 14:30:12,083 | INFO | ✅ Epoch 1 | Train CLS Loss: 0.6851 | Train SEG Loss: 1.5418 | Val CLS Loss: 0.7317 | Val SEG Loss: 1.4639 | Acc: 0.4391 | F1: 0.2965 | Dice: 0.0164
+## updated the early stopping condition, as small changes are not considered
+2025-07-06 14:41:20,106 | INFO | ✅ Epoch 1 | Train CLS Loss: 0.6951 | Train SEG Loss: 1.4744 | Val CLS Loss: 0.6940 | Val SEG Loss: 1.3942 | Acc: 0.4679 | F1: 0.3297 | Dice: 0.0164
+2025-07-06 14:43:49,827 | INFO | ✅ Epoch 2 | Train CLS Loss: 0.6083 | Train SEG Loss: 1.3299 | Val CLS Loss: 0.6765 | Val SEG Loss: 1.2727 | Acc: 0.4968 | F1: 0.3601 | Dice: 0.0164
+2025-07-06 14:46:28,876 | INFO | ✅ Epoch 3 | Train CLS Loss: 0.5169 | Train SEG Loss: 1.2158 | Val CLS Loss: 0.5827 | Val SEG Loss: 1.1737 | Acc: 0.5833 | F1: 0.4343 | Dice: 0.0164
+2025-07-06 14:49:14,099 | INFO | ✅ Epoch 4 | Train CLS Loss: 0.5103 | Train SEG Loss: 1.1201 | Val CLS Loss: 0.6569 | Val SEG Loss: 1.0844 | Acc: 0.4776 | F1: 0.3725 | Dice: 0.0164
+## updated the criterion_seg, as due to the sparse mask, this value is very low
+2025-07-06 14:53:11,428 | INFO | ✅ Epoch 1 | Train CLS Loss: 0.6846 | Train SEG Loss: 0.8854 | Val CLS Loss: 0.9141 | Val SEG Loss: 0.8669 | Acc: 0.4199 | F1: 0.2848 | Dice: 0.0164
+2025-07-06 14:56:09,352 | INFO | ✅ Epoch 2 | Train CLS Loss: 0.6167 | Train SEG Loss: 0.8474 | Val CLS Loss: 0.6688 | Val SEG Loss: 0.8310 | Acc: 0.4968 | F1: 0.3524 | Dice: 0.0164
+2025-07-06 14:59:13,398 | INFO | ✅ Epoch 3 | Train CLS Loss: 0.5039 | Train SEG Loss: 0.8096 | Val CLS Loss: 0.9415 | Val SEG Loss: 0.7953 | Acc: 0.4583 | F1: 0.3397 | Dice: 0.0164
+2025-07-06 15:02:28,158 | INFO | ✅ Epoch 1 | Train CLS Loss: 0.6949 | Train SEG Loss: 0.9127 | Val CLS Loss: 0.5722 | Val SEG Loss: 0.8991 | Acc: 0.4872 | F1: 0.3575 | Dice: 0.0164
+2025-07-06 15:05:44,308 | INFO | ✅ Epoch 2 | Train CLS Loss: 0.6236 | Train SEG Loss: 0.8817 | Val CLS Loss: 0.5691 | Val SEG Loss: 0.8652 | Acc: 0.5929 | F1: 0.4616 | Dice: 0.0164
+## till now, we were experimenting with 128*128 then 256*256 image size
+## now we are training model on 512*512 image size
+2025-07-06 15:34:15,363 | INFO | ✅ Epoch 1 | Train CLS Loss: 0.7277 | Train SEG Loss: 0.7543 | Val CLS Loss: 0.6812 | Val SEG Loss: 0.6673 | Acc: 0.4872 | F1: 0.3531 | Dice: 0.1713
+2025-07-06 15:59:18,911 | INFO | ✅ Epoch 2 | Train CLS Loss: 0.6259 | Train SEG Loss: 0.6540 | Val CLS Loss: 0.6404 | Val SEG Loss: 0.6553 | Acc: 0.4583 | F1: 0.3241 | Dice: 0.1856
+2025-07-06 16:23:27,927 | INFO | ✅ Epoch 3 | Train CLS Loss: 0.5472 | Train SEG Loss: 0.6034 | Val CLS Loss: 0.5032 | Val SEG Loss: 0.5840 | Acc: 0.5737 | F1: 0.4136 | Dice: 0.2811
+2025-07-06 16:46:26,069 | INFO | ✅ Epoch 4 | Train CLS Loss: 0.4409 | Train SEG Loss: 0.5674 | Val CLS Loss: 0.5210 | Val SEG Loss: 0.5566 | Acc: 0.5545 | F1: 0.4228 | Dice: 0.3181
+2025-07-06 17:08:30,386 | INFO | ✅ Epoch 5 | Train CLS Loss: 0.4281 | Train SEG Loss: 0.5433 | Val CLS Loss: 0.6283 | Val SEG Loss: 0.5484 | Acc: 0.5064 | F1: 0.3891 | Dice: 0.3672
+2025-07-06 17:29:26,661 | INFO | ✅ Epoch 6 | Train CLS Loss: 0.4604 | Train SEG Loss: 0.4878 | Val CLS Loss: 0.4940 | Val SEG Loss: 0.4793 | Acc: 0.5737 | F1: 0.4220 | Dice: 0.4295
+2025-07-06 17:50:41,058 | INFO | ✅ Epoch 7 | Train CLS Loss: 0.3760 | Train SEG Loss: 0.4517 | Val CLS Loss: 0.4525 | Val SEG Loss: 0.4721 | Acc: 0.5545 | F1: 0.3806 | Dice: 0.4486
+2025-07-06 18:12:18,875 | INFO | ✅ Epoch 8 | Train CLS Loss: 0.2824 | Train SEG Loss: 0.4163 | Val CLS Loss: 0.7864 | Val SEG Loss: 0.4665 | Acc: 0.5833 | F1: 0.4560 | Dice: 0.4592
+2025-07-06 18:59:16,195 | INFO | ✅ Epoch 9 | Train CLS Loss: 0.3733 | Train SEG Loss: 0.4078 | Val CLS Loss: 0.6608 | Val SEG Loss: 0.4537 | Acc: 0.5833 | F1: 0.4297 | Dice: 0.4733
+2025-07-06 19:22:10,295 | INFO | ✅ Epoch 10 | Train CLS Loss: 0.3202 | Train SEG Loss: 0.3961 | Val CLS Loss: 0.5771 | Val SEG Loss: 0.4354 | Acc: 0.5641 | F1: 0.4223 | Dice: 0.5083
+2025-07-06 19:44:12,049 | INFO | ✅ Epoch 11 | Train CLS Loss: 0.2368 | Train SEG Loss: 0.3818 | Val CLS Loss: 0.6196 | Val SEG Loss: 0.4468 | Acc: 0.5929 | F1: 0.4724 | Dice: 0.4705
+2025-07-06 20:07:46,459 | INFO | ✅ Epoch 12 | Train CLS Loss: 0.2269 | Train SEG Loss: 0.3654 | Val CLS Loss: 0.5808 | Val SEG Loss: 0.4281 | Acc: 0.5192 | F1: 0.3788 | Dice: 0.5158
+2025-07-06 20:07:46,460 | INFO | 🛑 Early stopping triggered.
+2025-07-06 20:07:47,326 | INFO | ✅ Final model saved to models/mtl_model_final.pth
+## checking with image size 640*640 // might improve from previous but taking lot of time, need to train on gpu
+2025-07-06 20:58:36,806 | INFO | ✅ Epoch 1 | Train CLS Loss: 0.6814 | Train SEG Loss: 0.7587 | Val CLS Loss: 0.5540 | Val SEG Loss: 0.6881 | Acc: 0.4968 | F1: 0.3388 | Dice: 0.1757

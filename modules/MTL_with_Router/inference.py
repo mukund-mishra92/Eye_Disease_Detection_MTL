@@ -12,13 +12,13 @@ device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
 # Initialize model and load weights
 model = MultiTaskModel(num_disease_classes=5, num_segmentation_channels=5)
-model.load_state_dict(torch.load("models/mtl_model.pth", map_location=device))
+model.load_state_dict(torch.load("/Users/balmukundmishra/Desktop/2025-Learning/Eye_Disease_Detection_MTL/models/mtl_model_final.pth", map_location=device))
 model.to(device)
 model.eval()
 
 # Image preprocessing
 transform = transforms.Compose([
-    transforms.Resize((256, 256)),
+    transforms.Resize((512, 512)),
     transforms.ToTensor()
 ])
 
